@@ -4,9 +4,21 @@
   <groupId>com.my</groupId>
   <artifactId>DetailsEntry</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>DetailsEntry Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+  <distributionManagement>
+   <repository>
+    <id>release</id>
+    <url>http://172.42.42.101:8081/nexus/content/repositories/releases/</url>
+    </repository>
+   <snapshotRepository>
+     <id>snapshots</id>
+     <url>http://172.42.42.101:8081/nexus/content/repositories/snapshots/</url>
+   </snapshotRepository>
+  </distributionManagement>
+ 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
