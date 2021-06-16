@@ -18,8 +18,8 @@ pipeline {
    stage('Deploy to Nexus'){
       steps{
         withMaven(mavenSettingsConfig:'b1adc66a-b1e8-4229-acee-f9de4803b6bf'){
-         sh 'mvn deploy'}
+         sh 'mvn deploy'
      }
     }
  }
-}}
+}
